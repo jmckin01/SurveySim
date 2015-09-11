@@ -153,7 +153,9 @@ class ModelFile:
             'fcomp':parameter(0.5,0.0,1.0,1,"Fraction of AGN Composites"),
             'fcold':parameter(0.5,0.0,1.0,1,"Fraction of Cold SFG")
         }
+        
 
+        
     def info(self):
         print "Model File Info:"
         print "  Name:",self.filename
@@ -313,3 +315,5 @@ class ModelFile:
         else:
             print 'Writing a new model file'
             thdulist.writeto(self.filename);
+
+    
